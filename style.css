@@ -23,7 +23,23 @@ h1 {
    height: 100%;
    background-image: url(./img/1.jpg);
    background-size: cover;
-   animation: slider 10s infinite;
+   -webkit-animation: slider 10s infinite;
+           animation: slider 10s infinite;
+}
+
+@-webkit-keyframes slider {
+   25% {
+      background-image: url(./img/2.jpg);
+   }
+   50% {
+      background-image: url(./img/3.jpg);
+   }
+   75% {
+      background-image: url(./img/4.jpg);
+   }
+   100% {
+      background-image: url(./img/1.jpg);
+   }
 }
 
 @keyframes slider {
